@@ -1,0 +1,12 @@
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.BAL.dll
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.BAL.pdb
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\obj\Debug\Inchariot.BAL.dll
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\obj\Debug\Inchariot.BAL.pdb
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\obj\Debug\Inchariot.BAL.csprojResolveAssemblyReference.cache
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.BAL.dll.config
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\EntityFramework.dll
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.DAL.dll
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.DAL.pdb
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\EntityFramework.xml
+D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\EntityFramework.SqlServer.xml
