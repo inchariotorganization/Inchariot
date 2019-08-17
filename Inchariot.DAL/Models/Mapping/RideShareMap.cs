@@ -19,14 +19,6 @@ namespace Inchariot.DAL.Models.Mapping
             this.Property(t => t.MemberCardId)
                 .HasMaxLength(300);
 
-            this.Property(t => t.SourceCityId)
-                .IsFixedLength()
-                .HasMaxLength(36);
-
-            this.Property(t => t.DestinationCityId)
-                .IsFixedLength()
-                .HasMaxLength(36);
-
             this.Property(t => t.Vehicle)
                 .HasMaxLength(200);
 
@@ -35,8 +27,8 @@ namespace Inchariot.DAL.Models.Mapping
             this.Property(t => t.Id).HasColumnName("Id");
             this.Property(t => t.MemberCardId).HasColumnName("MemberCardId");
             this.Property(t => t.TravelStartTime).HasColumnName("TravelStartTime");
-            this.Property(t => t.SourceCityId).HasColumnName("SourceCityId");
-            this.Property(t => t.DestinationCityId).HasColumnName("DestinationCityId");
+            this.Property(t => t.SourceCity).HasColumnName("SourceCity");
+            this.Property(t => t.DestinationCity).HasColumnName("DestinationCity");
             this.Property(t => t.SeatsOffered).HasColumnName("SeatsOffered");
             this.Property(t => t.ContributionPerHead).HasColumnName("ContributionPerHead");
             this.Property(t => t.CreatedOn).HasColumnName("CreatedOn");

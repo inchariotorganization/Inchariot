@@ -1,6 +1,8 @@
 ﻿using Inchariot.BAL.ViewModels;
 using Inchariot.DAL.Models;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Inchariot.BAL.Repository
 {
@@ -13,26 +15,28 @@ namespace Inchariot.BAL.Repository
             rideShare.AC = createRideViewModel.AC;
             rideShare.ContributionPerHead = createRideViewModel.ContributionPerHead;
             rideShare.CreatedOn = createRideViewModel.CreatedOn;
-            rideShare.DestinationCityId = createRideViewModel.DestinationCityId;
+            rideShare.SourceCity = createRideViewModel.SourceCity;
+            rideShare.DestinationCity = createRideViewModel.DestinationCity;
             rideShare.Id = Guid.NewGuid().ToString();
             rideShare.TravelStartTime = createRideViewModel.TravelStartTime;
             rideShare.Vehicle = createRideViewModel.Vehicle;
             rideShare.SeatsOffered = createRideViewModel.SeatsOffered;
             rideShare.MemberCardId = createRideViewModel.MemberCarId;
             db.RideShares.Add(rideShare);
-            City city = new City();
-            city.CityName = createRideViewModel.SourceCity;
-            city.Id = createRideViewModel.SourceCityId;
-            db.Cities.Add(city);
-            city.CityName = createRideViewModel.DestinationCity;
-            city.Id = createRideViewModel.DestinationCityId;
-            db.Cities.Add(city);
             db.SaveChanges();
             return true;
         }
 
-        public void Method()
+
+        public List<ViewModels.VehicleType> GetVehicleType()
         {
+            List<ViewModels.VehicleType> model = new List<ViewModels.VehicleType>();
+            var list = db.VehicleTypes.ToList();
+            foreach (var item in list)
+            {
+                model.Add(new ViewModels.VehicleType {Id=item.Id, Type=item.VehicleType1 });
+            }
+            return model;
         }
 
 

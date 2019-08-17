@@ -10,3 +10,15 @@ D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.DAL.
 D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.DAL.pdb
 D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\EntityFramework.xml
 D:\Inchariot\Inchariot-Solution\Inchariot\Inchariot.BAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\obj\Debug\Inchariot.BAL.csprojResolveAssemblyReference.cache
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\obj\Debug\Inchariot.BAL.dll
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\obj\Debug\Inchariot.BAL.pdb
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.BAL.dll.config
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.BAL.dll
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.BAL.pdb
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\bin\Debug\EntityFramework.dll
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.DAL.dll
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\bin\Debug\Inchariot.DAL.pdb
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\bin\Debug\EntityFramework.xml
+D:\GitHub\GitHub\Inchariot\Inchariot.BAL\bin\Debug\EntityFramework.SqlServer.xml

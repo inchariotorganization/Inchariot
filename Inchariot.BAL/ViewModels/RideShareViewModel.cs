@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Inchariot.BAL.ViewModels
 {
@@ -19,5 +20,13 @@ namespace Inchariot.BAL.ViewModels
         public Nullable<System.DateTime> CreatedOn { get; set; }
         public Nullable<bool> AC { get; set; }
         public string Vehicle { get; set; }
+        public List<VehicleType> VehicleList { get; set; }
+
+    }
+
+    public class VehicleType
+    {
+        public int Id { get; set; }
+        public string Type { get; set; }
     }
 }

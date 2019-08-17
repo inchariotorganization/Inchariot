@@ -61,7 +61,6 @@
     <Compile Include="Models\aspnet_SchemaVersions.cs" />
     <Compile Include="Models\aspnet_Users.cs" />
     <Compile Include="Models\aspnet_WebEvent_Events.cs" />
-    <Compile Include="Models\City.cs" />
     <Compile Include="Models\CountryMaster.cs" />
     <Compile Include="Models\IncharoitAPIContext.cs" />
     <Compile Include="Models\Mapping\aspnet_ApplicationsMap.cs" />
@@ -74,14 +73,15 @@
     <Compile Include="Models\Mapping\aspnet_SchemaVersionsMap.cs" />
     <Compile Include="Models\Mapping\aspnet_UsersMap.cs" />
     <Compile Include="Models\Mapping\aspnet_WebEvent_EventsMap.cs" />
-    <Compile Include="Models\Mapping\CityMap.cs" />
     <Compile Include="Models\Mapping\CountryMasterMap.cs" />
     <Compile Include="Models\Mapping\ProfileChangeMap.cs" />
     <Compile Include="Models\Mapping\ProfileMap.cs" />
     <Compile Include="Models\Mapping\RegistrationMap.cs" />
     <Compile Include="Models\Mapping\RideShareMap.cs" />
     <Compile Include="Models\Mapping\sysdiagramMap.cs" />
+    <Compile Include="Models\Mapping\TableMap.cs" />
     <Compile Include="Models\Mapping\UserProfileMap.cs" />
+    <Compile Include="Models\Mapping\VehicleTypeMap.cs" />
     <Compile Include="Models\Mapping\vw_aspnet_ApplicationsMap.cs" />
     <Compile Include="Models\Mapping\vw_aspnet_MembershipUsersMap.cs" />
     <Compile Include="Models\Mapping\vw_aspnet_ProfilesMap.cs" />
@@ -99,7 +99,9 @@
     <Compile Include="Models\Registration.cs" />
     <Compile Include="Models\RideShare.cs" />
     <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="Models\Table.cs" />
     <Compile Include="Models\UserProfile.cs" />
+    <Compile Include="Models\VehicleType.cs" />
     <Compile Include="Models\vw_aspnet_Applications.cs" />
     <Compile Include="Models\vw_aspnet_MembershipUsers.cs" />
     <Compile Include="Models\vw_aspnet_Profiles.cs" />

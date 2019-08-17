@@ -19,6 +19,7 @@ namespace Inchariot.Web.Controllers
         public ActionResult Index()
         {
             CreateRideViewModel createRideViewModel = new CreateRideViewModel();
+            createRideViewModel.VehicleList = rideShareRepository.GetVehicleType();
             return View(createRideViewModel);
         }
 
