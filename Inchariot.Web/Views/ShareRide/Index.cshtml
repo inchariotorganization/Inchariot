@@ -14,82 +14,86 @@
                 <div class="col-sm-6">
                     @using (Html.BeginForm("Share", "ShareRide", FormMethod.Post))
                     {
-                        <div class="r-get-form">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        @Html.TextBoxFor(model=>model.SourceCity,new  { @placeholder = "From" })
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        @Html.TextBoxFor(model => model.DestinationCity, new { @placeholder = "Where To ?" })
-                                    </div>
+                    <div class="r-get-form">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    @Html.TextBoxFor(model=>model.SourceCity,new  { @placeholder = "From" })
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <select placeholder="Select Drive">
-                                            <option>Select Vehicle</option>
-                                            <option>Car</option>
-                                            <option>Bike</option>
-                                            <option>Bus</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <select placeholder="Select Drive">
-                                            <option>AC</option>
-                                            <option>Non AC</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        @Html.TextBoxFor(model => model.SeatsOffered, new { @placeholder = "Vaccent" })
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                        @Html.TextBoxFor(model => model.TravelStartTime, new { @placeholder = "Time to Start" })
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <input type="submit" class="btn btn-full" value="GO" />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <i class="fa fa-car car1"></i>
-                                </div>
-                                <div class="col">
-                                    <i class="fa fa-car car2"></i>
-                                </div>
-                                <div class="col">
-                                    <i class="fa fa-car car3"></i>
-                                </div>
-                                <div class="col">
-                                    <i class="fa fa-car car4"></i>
-                                </div>
-                                <div class="col">
-                                    <i class="fa fa-car car5"></i>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    @Html.TextBoxFor(model => model.DestinationCity, new { @placeholder = "Where To ?" })
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+
+                                    <select placeholder="Select Drive">
+                                        <option>Select Vehicle</option>
+                                        <option>Car</option>
+                                        <option>Bike</option>
+                                        <option>Bus</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+
+                                    <select placeholder="Select Drive">
+                                        <option>AC</option>
+                                        <option>Non AC</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    @Html.TextBoxFor(model => model.SeatsOffered, new { @placeholder = "Vaccent" })
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    @Html.TextBoxFor(model => model.TravelStartTime, new { @placeholder = "Time to Start" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="submit" class="btn btn-full" value="GO" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <i class="fa fa-car car1"></i>
+                            </div>
+                            <div class="col">
+                                <i class="fa fa-car car2"></i>
+                            </div>
+                            <div class="col">
+                                <i class="fa fa-car car3"></i>
+                            </div>
+                            <div class="col">
+                                <i class="fa fa-car car4"></i>
+                            </div>
+                            <div class="col">
+                                <i class="fa fa-car car5"></i>
+                            </div>
+                        </div>
+                    </div>
                     }
-                    
+
 
                     <div class="mt-4 text-uppercase text-white text-center" id="mail-status"></div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="row">
-                        <img src="assets/images/thumbnail.jpg" class="img-fluid">
+                 
+                    <div class="row" >
+                       
+
                     </div>
                 </div>
             </div>
@@ -97,114 +101,116 @@
         </div>
 
     </div>
-   
+
 </section>
+
 <script>
-        // This example requires the Places library. Include the libraries=places
-        // parameter when you first load the API. For example:
-        // <script
-        // src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                mapTypeControl: false,
-                center: { lat: -33.8688, lng: 151.2195 },
-                zoom: 13
-            });
 
-            new AutocompleteDirectionsHandler(map);
-        }
+    function initMap() {
+        debugger;
+        var map = new google.maps.Map(document.getElementById('mapShare'), {
+            mapTypeControl: false,
+            center: { lat: -33.8688, lng: 151.2195 },
+            zoom: 13
+        });
 
-      
-        function AutocompleteDirectionsHandler(map) {
-            this.map = map;
-            this.originPlaceId = null;
-            this.destinationPlaceId = null;
-            this.travelMode = 'WALKING';
-            this.directionsService = new google.maps.DirectionsService;
-            this.directionsDisplay = new google.maps.DirectionsRenderer;
-            this.directionsDisplay.setMap(map);
+        new AutocompleteDirectionsHandler(map);
+    }
 
-            var originInput = document.getElementById('<%=origin.ClientID%>');
-            var destinationInput = document.getElementById('<%=destination.ClientID%>');
-            var modeSelector = document.getElementById('mode-selector');
 
-            var originAutocomplete = new google.maps.places.Autocomplete(originInput);
-            // Specify just the place data fields that you need.
-            originAutocomplete.setFields(['place_id']);
+    function AutocompleteDirectionsHandler(map) {
+        debugger;
+        this.map = map;
+        this.originPlaceId = null;
+        this.destinationPlaceId = null;
+        this.travelMode = 'WALKING';
+        this.directionsService = new google.maps.DirectionsService;
+        this.directionsDisplay = new google.maps.DirectionsRenderer;
+        this.directionsDisplay.setMap(map);
 
-            var destinationAutocomplete =
-                new google.maps.places.Autocomplete(destinationInput);
-            // Specify just the place data fields that you need.
-            destinationAutocomplete.setFields(['place_id']);
+        var originInput = document.getElementById('SourceCity');
+        var destinationInput = document.getElementById('DestinationCity');
+        var modeSelector = document.getElementById('mode-selector');
 
-            this.setupClickListener('changemode-walking', 'WALKING');
-            this.setupClickListener('changemode-transit', 'TRANSIT');
-            this.setupClickListener('changemode-driving', 'DRIVING');
+        var originAutocomplete = new google.maps.places.Autocomplete(originInput);
+        // Specify just the place data fields that you need.
+        originAutocomplete.setFields(['place_id']);
 
-            this.setupPlaceChangedListener(originAutocomplete, 'ORIG');
-            this.setupPlaceChangedListener(destinationAutocomplete, 'DEST');
+        var destinationAutocomplete =
+            new google.maps.places.Autocomplete(destinationInput);
+        // Specify just the place data fields that you need.
+        destinationAutocomplete.setFields(['place_id']);
 
-            this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
-            this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(
-                destinationInput);
-            this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(modeSelector);
-        }
+        this.setupClickListener('changemode-walking', 'WALKING');
+        this.setupClickListener('changemode-transit', 'TRANSIT');
+        this.setupClickListener('changemode-driving', 'DRIVING');
 
-        // Sets a listener on a radio button to change the filter type on Places
-        // Autocomplete.
-        AutocompleteDirectionsHandler.prototype.setupClickListener = function (
+        this.setupPlaceChangedListener(originAutocomplete, 'ORIG');
+        this.setupPlaceChangedListener(destinationAutocomplete, 'DEST');
+
+        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
+        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(
+            destinationInput);
+        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(modeSelector);
+    }
+
+    // Sets a listener on a radio button to change the filter type on Places
+    // Autocomplete.
+    AutocompleteDirectionsHandler.prototype.setupClickListener = function (
+
             id, mode) {
-            var radioButton = document.getElementById(id);
-            var me = this;
+        debugger;
+        var radioButton = document.getElementById(id);
+        var me = this;
 
-            radioButton.addEventListener('click', function () {
-                me.travelMode = mode;
-                me.route();
-            });
-        };
+        //radioButton.addEventListener('click', function () {
+        //    me.travelMode = mode;
+        //    me.route();
+        //});
+    };
 
-        AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function (
-            autocomplete, mode) {
-            var me = this;
-            autocomplete.bindTo('bounds', this.map);
+    AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function (
+        autocomplete, mode) {
+        var me = this;
+        autocomplete.bindTo('bounds', this.map);
 
-            autocomplete.addListener('place_changed', function () {
-                var place = autocomplete.getPlace();
+        autocomplete.addListener('place_changed', function () {
+            var place = autocomplete.getPlace();
 
-                if (!place.place_id) {
-                    window.alert('Please select an option from the dropdown list.');
-                    return;
-                }
-                if (mode === 'ORIG') {
-                    me.originPlaceId = place.place_id;
-                } else {
-                    me.destinationPlaceId = place.place_id;
-                }
-                me.route();
-            });
-        };
-
-        AutocompleteDirectionsHandler.prototype.route = function () {
-            if (!this.originPlaceId || !this.destinationPlaceId) {
+            if (!place.place_id) {
+                window.alert('Please select an option from the dropdown list.');
                 return;
             }
-            var me = this;
+            if (mode === 'ORIG') {
+                me.originPlaceId = place.place_id;
+            } else {
+                me.destinationPlaceId = place.place_id;
+            }
+            me.route();
+        });
+    };
 
-            this.directionsService.route(
-                {
-                    origin: { 'placeId': this.originPlaceId },
-                    destination: { 'placeId': this.destinationPlaceId },
-                    travelMode: this.travelMode
-                },
-                function (response, status) {
-                    if (status === 'OK') {
-                        me.directionsDisplay.setDirections(response);
-                    } else {
-                        window.alert('Directions request failed due to ' + status);
-                    }
-                });
-        };
+    AutocompleteDirectionsHandler.prototype.route = function () {
+        if (!this.originPlaceId || !this.destinationPlaceId) {
+            return;
+        }
+        var me = this;
+
+        this.directionsService.route(
+            {
+                origin: { 'placeId': this.originPlaceId },
+                destination: { 'placeId': this.destinationPlaceId },
+                travelMode: this.travelMode
+            },
+            function (response, status) {
+                if (status === 'OK') {
+                    me.directionsDisplay.setDirections(response);
+                } else {
+                    window.alert('Directions request failed due to ' + status);
+                }
+            });
+    };
 
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_mCWzvHQBOzL3nHTm9MfwM_o-blvVEqM&libraries=places&callback=initMap"

@@ -31,6 +31,9 @@ namespace Inchariot.BAL.Repository
             return true;
         }
 
+        public void Method()
+        {
+        }
 
 
     }
